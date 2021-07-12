@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/wydatkis",
+      "handler": "wydatki.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wydatkis/count",
+      "handler": "wydatki.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wydatkis/:id",
+      "handler": "wydatki.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/wydatkis",
+      "handler": "wydatki.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/wydatkis/:id",
+      "handler": "wydatki.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/wydatkis/:id",
+      "handler": "wydatki.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

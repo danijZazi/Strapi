@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wydatkis",
+  "info": {
+    "name": "Wydatki"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nazwa": {
+      "type": "string"
+    },
+    "Kwota": {
+      "type": "decimal"
+    },
+    "user": {
+      "plugin": "admin",
+      "model": "user"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/",
+      "handler": "expenses.index",
+      "config": {
+        "policies": []
+      }
+    }
+    
+  ]
+}
