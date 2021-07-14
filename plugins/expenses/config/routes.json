@@ -2,8 +2,16 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/",
-      "handler": "expenses.index",
+      "path": "/expenses",
+      "handler": "expenses.getExpenses",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/expenses/:expenseId",
+      "handler": "expenses.getExpense",
       "config": {
         "policies": []
       }

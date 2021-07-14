@@ -7,21 +7,18 @@
 
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import { NotFound } from 'strapi-helper-plugin';
+import {request} from 'strapi-helper-plugin';
 // Utils
 import pluginId from '../../pluginId';
 // Containers
 import HomePage from '../HomePage';
-
-//import wydatki from '../../../../../../api/wydatki/controllers'
-
 
 const App = () => {
   return (
     <div>
       <Switch>
         <Route path={`/plugins/${pluginId}`} component={HomePage} exact />
-        <Route component={NotFound} />
+        <Route component={Request} />
       </Switch>
     </div>
   );
